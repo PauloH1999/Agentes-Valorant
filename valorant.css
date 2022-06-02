@@ -1,0 +1,186 @@
+body{
+    background-color: #333;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* titulo */
+#titulo{
+    position: absolute;
+    top: 50px;
+    color: white;
+}
+
+/* container */
+#container{
+    top: 200px;
+    position: relative;
+    width: 1280px;
+    height: 720px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+    
+    background-image: url(./backValorant/Valorant_pink_version_logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vh;
+}
+@media (max-width:1400px) {
+    #container{
+        width: 1000px;
+        height: 720px;
+    }
+}
+
+
+
+/* video */
+#video{
+    top: 0;
+    position: absolute;
+    width: 1024px;
+    height: 600px;
+    bottom: 600px;
+}
+@media (max-width:1400px) {
+    #video{
+        width: 	800px;
+        height: 600px;
+
+        top: 0;
+    }
+}
+
+/* agente */
+.bnc{
+    overflow: hidden;
+    width: 70px;
+    height: 150px;
+    position: relative;
+}
+
+.bnc:hover{
+    content: "";
+    width: 150px;
+    height: 150px;
+    bottom: 50px;
+
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 30px 25px 20px rgba(0,0,0,0.84); 
+    box-shadow: 0px 30px 25px 20px rgba(0,0,0,0.84);
+}
+
+/* icone agente */
+img{
+    position: absolute;
+    border-radius: 50%;
+
+    width: 100px;
+    height: 100px;
+
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@media (max-width:1400px) {
+    img{
+        width: 	100px;
+        height: 100px;
+    }
+}
+
+
+img:hover{
+    content: "";
+    width: 150px;
+    height: 150px;
+
+    
+}
+
+/* Desc Agentes */
+
+#desc{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -30%;
+    color: white;
+
+    width: 1280px;
+    height: 200px;
+    /* border: solid 2px white; */
+}
+
+/* habilidades */
+
+#icons{
+    /* border: solid 4px white; */
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    gap: 150px;
+    justify-content: space-between;
+}
+                /* Q */
+#iconQ{
+    /* border: solid white 2px; */
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+#imgQ{
+    position: absolute;
+}
+                /* E */
+#iconE{
+    /* border: solid white 2px; */
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+#imgE{
+    position: absolute;
+}
+                /* C */
+#iconC{
+    /* border: solid white 2px; */
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+#imgC{
+    position: absolute;
+}
+                /* X */
+#iconX{
+    /* border: solid white 2px; */
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+#imgX{
+    position: absolute;
+}
+
+                /* p */
+p{
+    position: absolute;
+    font-size: 35px;
+    width: 1280px;
+    left: 150px;
+    overflow: hidden;
+    border-bottom: 5px black solid;
+}
+@media (max-width:1400px) {
+    p{
+        width: 900px;
+        position: absolute;
+    }
+}
